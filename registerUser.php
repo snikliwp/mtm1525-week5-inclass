@@ -27,9 +27,9 @@ define('SALT', 'Th1s1sTh3S4ltK3y');
 header("Content-Type: text/xml");
 echo '<?xml version="1.0" encoding="utf-8" ?>' ."\r\n";
 $link = mysqli_connect("localhost", "sampleuser", "samplepass", "samplesite") or die('<data>
-																																							<code>1111</code>
-																																							<message>Unable to connect with the database.</message>
-																																						</data>');
+																						<code>1111</code>
+																						<message>Unable to connect with the database.</message>
+																					</data>');
 
 
 if( isset($_REQUEST['first_name']) && isset($_REQUEST['last_name']) && isset($_REQUEST['email']) && isset($_REQUEST['password']) ){
